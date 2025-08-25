@@ -62,17 +62,15 @@ const Header = () => {
     >
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="text-xl font-bold cursor-pointer"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
-            <span className="text-foreground">Gustavo </span>
-            <span className="text-gradient">Almeida</span>
+            <span className="text-gradient">Dev </span>
+            <span className="text-foreground">Gustavo Almeida</span>
           </motion.div>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-1">
             {navItems.map((item) => (
               <motion.button
@@ -98,7 +96,6 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -109,7 +106,6 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <motion.div
             initial={{ opacity: 0, y: -20 }}

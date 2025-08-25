@@ -40,7 +40,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-muted-foreground leading-relaxed"
           >
-            Arquiteto de sistemas escaláveis e APIs, criando fundações robustas que alimentam soluções modernas. Especialista em bancos de dados e infraestrutura que prospera nos bastidores.
+            Fullstack developer specializing in backend architecture and scalable, high-performance systems. Skilled in .NET, TypeScript, and modern API design, with a strong focus on clean code, service integration, and efficient software delivery.
           </motion.p>
 
           <motion.div
@@ -53,7 +53,7 @@ const HeroSection = () => {
               onClick={scrollToAbout}
               className="bg-gradient-purple text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 transform hover:scale-105"
             >
-              Conheça meu trabalho
+              See My Projects
             </button>
             <button 
               onClick={() => {
@@ -64,7 +64,7 @@ const HeroSection = () => {
               }}
               className="border border-border text-foreground px-6 py-3 rounded-lg font-semibold hover:bg-muted transition-all duration-300"
             >
-              Entre em contato
+              Contact
             </button>
           </motion.div>
         </motion.div>

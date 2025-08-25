@@ -38,7 +38,7 @@ const SkillsSection = () => {
             Technical <span className="text-gradient">Skills</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            As tecnologias e ferramentas que uso para construir sistemas backend robustos
+            The technologies and tools I use to build robust backend systems
           </p>
           <div className="w-24 h-1 bg-primary mx-auto"></div>
         </motion.div>
