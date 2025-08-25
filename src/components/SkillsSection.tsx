@@ -4,25 +4,19 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { skills } from '@/data/portfolio';
-import * as SiIcons from 'react-icons/si';
-import * as MdIcons from 'react-icons/md';
+import { Icon } from '@iconify/react';
 
 const SkillsSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   const getIcon = (iconName: string) => {
-    const SiIcon = (SiIcons as Record<string, React.ComponentType<{ size: number }>>)[iconName];
-    const MdIcon = (MdIcons as Record<string, React.ComponentType<{ size: number }>>)[iconName];
-    
-    if (SiIcon) return <SiIcon size={24} />;
-    if (MdIcon) return <MdIcon size={24} />;
-    return <div className="w-6 h-6 bg-muted rounded"></div>;
+    return <Icon icon={iconName} width={24} height={24} />;
   };
 
   const categories = [
     'Backend',
-    'Frontend', 
+    'Frontend',
     'Database',
     'Cloud & DevOps',
     'Metodologias Ágeis',
@@ -52,9 +46,9 @@ const SkillsSection = () => {
         <div className="space-y-12">
           {categories.map((category, categoryIndex) => {
             const categorySkills = skills.filter(skill => skill.category === category);
-            
+
             if (categorySkills.length === 0) return null;
-            
+
             return (
               <motion.div
                 key={category}
@@ -64,16 +58,16 @@ const SkillsSection = () => {
                 className="bg-card rounded-xl p-8 border border-border"
               >
                 <h3 className="text-2xl font-semibold text-foreground mb-6">{category}</h3>
-                
+
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
                   {categorySkills.map((skill, skillIndex) => (
                     <motion.div
                       key={skill.name}
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
-                      transition={{ 
-                        duration: 0.4, 
-                        delay: categoryIndex * 0.1 + skillIndex * 0.05 
+                      transition={{
+                        duration: 0.4,
+                        delay: categoryIndex * 0.1 + skillIndex * 0.05
                       }}
                       whileHover={{ scale: 1.05, y: -5 }}
                       className="bg-background p-4 rounded-lg border border-border hover:border-primary transition-all duration-200 cursor-pointer group"

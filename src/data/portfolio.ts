@@ -1,36 +1,37 @@
 import { Skill, Project, Experience, Certification } from '@/types';
 
 export const skills: Skill[] = [
-  { name: 'C#', icon: 'SiCsharp', category: 'Backend' },
-  { name: '.NET Core', icon: 'SiDotnet', category: 'Backend' },
-  { name: 'ASP.NET', icon: 'SiDotnet', category: 'Backend' },
-  { name: 'Go', icon: 'SiGo', category: 'Backend' },
-  { name: 'Python', icon: 'SiPython', category: 'Backend' },
-  
-  { name: 'Next', icon: 'SiNextdotjs', category: 'Frontend' },
-  { name: 'React', icon: 'SiReact', category: 'Frontend' },
-  
-  { name: 'SQL Server', icon: 'SiMicrosoftsqlserver', category: 'Database' },
-  { name: 'PostgreSQL', icon: 'SiPostgresql', category: 'Database' },
-  { name: 'Redis', icon: 'SiRedis', category: 'Database' },
-  
-  { name: 'Docker', icon: 'SiDocker', category: 'Cloud & DevOps' },
-  { name: 'Kubernetes', icon: 'SiKubernetes', category: 'Cloud & DevOps' },
-  { name: 'Jenkins', icon: 'SiJenkins', category: 'Cloud & DevOps' },
-  
-  { name: 'Scrum', icon: 'MdGroups', category: 'Metodologias Ágeis' },
-  { name: 'Sprints', icon: 'MdSpeed', category: 'Metodologias Ágeis' },
-  { name: 'OKRs', icon: 'MdTrackChanges', category: 'Metodologias Ágeis' },
-  
-  { name: 'Azure DevOps', icon: 'SiAzuredevops', category: 'Gestão' },
-  
-  { name: 'Visual Studio', icon: 'SiVisualstudio', category: 'Tools' },
-  { name: 'VS Code', icon: 'SiVisualstudiocode', category: 'Tools' },
-  { name: 'Git', icon: 'SiGit', category: 'Tools' },
-  { name: 'Postman', icon: 'SiPostman', category: 'Tools' },
-  { name: 'ApiDog', icon: 'MdApi', category: 'Tools' },
+  { name: 'C#', icon: 'mdi:language-csharp', category: 'Backend' },
+  { name: '.NET Core', icon: 'simple-icons:dotnet', category: 'Backend' },
+  { name: 'ASP.NET', icon: 'simple-icons:dotnet', category: 'Backend' },
+  { name: 'Go', icon: 'mdi:language-go', category: 'Backend' },
+  { name: 'NestJS', icon: 'devicon-plain:nestjs', category: 'Backend' },
 
-  { name: 'xUnit', icon: 'SiTestinglibrary', category: 'Testing' },
+  { name: 'Next.js', icon: 'teenyicons:nextjs-outline', category: 'Frontend' },
+  { name: 'React', icon: 'mdi:react', category: 'Frontend' },
+  { name: 'Vue.js', icon: 'mdi:vuejs', category: 'Frontend'},
+
+  { name: 'SQL Server', icon: 'simple-icons:microsoftsqlserver', category: 'Database' },
+  { name: 'PostgreSQL', icon: 'mdi:database', category: 'Database' },
+  { name: 'Redis', icon: 'devicon-plain:redis', category: 'Database' },
+
+  { name: 'Docker', icon: 'mdi:docker', category: 'Cloud & DevOps' },
+  { name: 'Kubernetes', icon: 'mdi:kubernetes', category: 'Cloud & DevOps' },
+  { name: 'Jenkins', icon: 'fa-brands:jenkins', category: 'Cloud & DevOps' },
+
+  { name: 'Scrum', icon: 'material-symbols:groups', category: 'Metodologias Ágeis' },
+  { name: 'Sprints', icon: 'material-symbols:speed', category: 'Metodologias Ágeis' },
+  { name: 'OKRs', icon: 'material-symbols:track-changes', category: 'Metodologias Ágeis' },
+
+  { name: 'Azure DevOps', icon: 'simple-icons:azuredevops', category: 'Gestão' },
+
+  { name: 'Visual Studio', icon: 'mdi:microsoft-visual-studio', category: 'Tools' },
+  { name: 'VS Code', icon: 'mdi:visual-studio-code', category: 'Tools' },
+  { name: 'Git', icon: 'mdi:git', category: 'Tools' },
+  { name: 'Postman', icon: 'simple-icons:postman', category: 'Tools' },
+  { name: 'ApiDog', icon: 'material-symbols:api', category: 'Tools' },
+
+  { name: 'xUnit', icon: 'mdi:test-tube', category: 'Testing' },
 ];
 
 export const experiences: Experience[] = [

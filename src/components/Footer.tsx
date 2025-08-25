@@ -98,9 +98,9 @@ const Footer = () => {
               Contato
             </h4>
             <div className="space-y-2 text-muted-foreground">
-              <p>gustavo.almeida@email.com</p>
-              <p>+55 (11) 99999-9999</p>
-              <p>São Paulo, Brasil</p>
+              <p>gustavoalmeidacarvalho2005@gmail.com</p>
+              <p>+55 (79) 99885-3307</p>
+              <p>Aracaju, Brasil</p>
             </div>
             <div className="mt-6">
               <button
